@@ -15,7 +15,8 @@ class Migration(migrations.Migration):
             model_name="movie",
             name="image",
             field=models.ImageField(
-                null=True, upload_to=cinema.models.create_custom_path
+                null=True,
+                upload_to=cinema.models.create_custom_path
             ),
         ),
     ]
